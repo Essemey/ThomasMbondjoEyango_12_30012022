@@ -1,24 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/App.css';
+import Home from './pages';
+
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <main className="App">
+      <header id="header-x">
+        <nav id="nav-x">
+          <ul>
+            <li><a href="#"><img src='./images/sportsee.svg' id="logo" /></a></li>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Profil</a></li>
+            <li><a href="#">Réglage</a></li>
+            <li><a href="#">Communauté</a></li>
+          </ul>
+        </nav>
       </header>
-    </div>
+      <div className="content">
+        <header id="header-y">
+          <nav id="nav-y">
+            <ul>
+              <li><a href="#"><img src='./images/meditation.svg' /></a></li>
+              <li><a href="#"><img src='./images/swimming.svg' /></a></li>
+              <li><a href="#"><img src='./images/cycling.svg' /></a></li>
+              <li><a href="#"><img src='./images/bodybuilding.svg' /></a></li>
+            </ul>
+          </nav>
+          <p>Copiryght, SportSee 2020</p>
+        </header>
+        <Home />
+      </div>
+    </main>
   );
 }
 

@@ -1,0 +1,69 @@
+#home{
+    padding-top: 161px;
+    padding-left: 109px;
+}
+
+#home .red{
+    color: #FF0000;
+}
+
+#home .hello{
+    font-size: 42px;
+}
+
+.error-fetching, .loading-fetching{
+    height: 100vh;
+    margin-top: 150px;
+    margin-left: 50px;
+}
+
+#home #congrats{
+    font-size: 18px;
+    margin-top: 31px;
+}
+
+#home #foodInfos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 615px;
+    margin-left: 60px;
+}
+
+#home #analytics{
+    display: flex;
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+#home #analytics #graphs{
+    display: flex;
+    flex-direction: column;
+}
+
+#home #analytics #graphs #secondary-graphs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media  (max-width: 1440px){
+
+    #home{
+        padding-left: 0;
+        margin: auto;
+}
+
+    #home #analytics{
+   flex-direction: column;
+}
+
+#home #foodInfos{
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-top: 40px;
+    height:auto;
+}
+
+}
